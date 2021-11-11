@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+ 
+ 
+ #headPic{
+    /* border:1px solid red; */
+    height:200px;
+    width:100%;
+    background-image: url("https://via.placeholder.com/150"); 
+    background-size: cover;
+    margin-bottom: 120px;
+    
+}
+.grey{
+    /* border: 1px solid blue; */
+    height:850px;
+    width: 100%;
+    margin-top: 80px;
+    position:relative;
+    z-index: 10;
+    background-color: rgba(128, 128, 128, 0.301);
+}
+#container{
+    display:flex;
+    /* border:1px solid black; */
+    flex-direction:row;
+    width:1150px;
+    /* height: 600px; */
+    justify-content: space-evenly;
+    /* margin-left: 50px; */
+    font-family: sans-serif;
+    z-index: 1000;
+    position: relative;
+    margin:0 auto;
+   
+}
+.left{
+    width:25%;
+    /* border:1px solid green; */
+   
+
+}
+
+.left > div:nth-child(1){
+    /* border:1px solid blue; */
+    height:180px;
+    background-image:url("https://relianceretail.com/img/brands/trends.jpg") ;
+    background-size: cover;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    color: white;
+    margin:auto ;
+}
+
+li{
+    /* border: 1px solid rgb(243, 234, 234); */
+    box-sizing: border-box;
+    font-family: sans-serif;
+    height:30px;
+    font-size: 17px;
+   vertical-align: space-evenly;
+   color: rgba(245, 245, 245, 0.932);
+   cursor: pointer;
+   padding-top: 7px;
+}
+li:hover{
+    color: #fff;
+    font-size: 18.5px;
+}
+.left > div:nth-child(2){
+    /* border:1px solid yellow; */
+    background-image:url("../src/red-patterns.jpg") ;
+    justify-content: right;  
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    
+}
+.left > div:nth-child(2) > div{
+    /* border:1px solid white; */
+    height: 650px;
+    text-align: left;
+}
+
+.right{
+    /* border:1px solid rgb(245, 80, 88); */
+    width:75%;
+}
+
+.right > div{
+    /* border:1px solid rgb(139, 32, 139); */
+    height: 60px;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+/********* logo img *******/
+img{
+    height:70px;
+    
+}
+.right > div + div{
+     /* border:1px solid rgb(161, 52, 9); */
+    /* height: 700px;  */
+    width:100%;
+    padding: 10px;
+     /* background-color: rgba(128, 128, 128, 0.301); */
+    /* font-size:18px; */
+    font-weight: 2px;
+    line-height: 25px;
+   
+}
+
+.right .greyBg{
+    background-color: #b8b8b8;
+    border: 1px solid;
+    /* height: 100%; */
+}
+
+
+
+
+/* MEDIA QUERY */
+@media screen and (min-width:0px) and(max-width:799px){
+    #headPic{
+        min-width:auto;
+        display:block;
+    }
+    #container{
+        flex-basis: content;
+    }
+}
+
+

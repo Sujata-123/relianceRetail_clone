@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+		integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+		integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+		integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+	
+	
+	
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+ 
+<!------------------------------------------------------------- header start ------------------------------------------------------------->
+	<script src="js/header.js"></script> 
+	<script src="js/nav.js"></script>
+	<div class="header_space" style="height: 100px;background-color: white;"></div>
+<!------------------------------------------------------------- header end ------------------------------------------------------------->
+
+ <!------------------------------------------------------------ banner start ------------------------------------------------------------->
+<!-- dont touch any thing in this part -->
+
+
+	<script src="js/jssor.slider-28.1.0.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		window.jssor_1_slider_init = function () {
+
+			var jssor_1_SlideoTransitions = [
+				[{ b: -1, d: 1, ls: 0.5 }, { b: 0, d: 1000, y: 5, e: { y: 6 } }],
+				[{ b: -1, d: 1, ls: 0.5 }, { b: 200, d: 1000, y: 25, e: { y: 6 } }],
+				[{ b: -1, d: 1, ls: 0.5 }, { b: 400, d: 1000, y: 45, e: { y: 6 } }],
+				[{ b: -1, d: 1, ls: 0.5 }, { b: 600, d: 1000, y: 65, e: { y: 6 } }],
+				[{ b: -1, d: 1, ls: 0.5 }, { b: 800, d: 1000, y: 85, e: { y: 6 } }],
+				[{ b: -1, d: 1, ls: 0.5 }, { b: 500, d: 1000, y: 195, e: { y: 6 } }],
+				[{ b: 0, d: 2000, y: 30, e: { y: 3 } }],
+				[{ b: -1, d: 1, rY: -15, tZ: 100 }, { b: 0, d: 1500, y: 30, o: 1, e: { y: 3 } }],
+				[{ b: -1, d: 1, rY: -15, tZ: -100 }, { b: 0, d: 1500, y: 100, o: 0.8, e: { y: 3 } }],
+				[{ b: 500, d: 1500, o: 1 }],
+				[{ b: 0, d: 1000, y: 380, e: { y: 6 } }],
+				[{ b: 300, d: 1000, x: 80, e: { x: 6 } }],
+				[{ b: 300, d: 1000, x: 330, e: { x: 6 } }],
+				[{ b: -1, d: 1, r: -110, sX: 5, sY: 5 }, { b: 0, d: 2000, o: 1, r: -20, sX: 1, sY: 1, e: { o: 6, r: 6, sX: 6, sY: 6 } }],
+				[{ b: 0, d: 600, x: 150, o: 0.5, e: { x: 6 } }],
+				[{ b: 0, d: 600, x: 1140, o: 0.6, e: { x: 6 } }],
+				[{ b: -1, d: 1, sX: 5, sY: 5 }, { b: 600, d: 600, o: 1, sX: 1, sY: 1, e: { sX: 3, sY: 3 } }]
+			];
+
+			var jssor_1_options = {
+				$AutoPlay: 1,
+				$LazyLoading: 1,
+				$CaptionSliderOptions: {
+					$Class: $JssorCaptionSlideo$,
+					$Transitions: jssor_1_SlideoTransitions
+				},
+				$ArrowNavigatorOptions: {
+					$Class: $JssorArrowNavigator$
+				},
+				$BulletNavigatorOptions: {
+					$Class: $JssorBulletNavigator$,
+					$SpacingX: 20,
+					$SpacingY: 20
+				}
+			};
+
+			var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+			/*#region responsive code begin*/
+
+			var MAX_WIDTH = 1600;
+
+			function ScaleSlider() {
+				var containerElement = jssor_1_slider.$Elmt.parentNode;
+				var containerWidth = containerElement.clientWidth;
+
+				if (containerWidth) {
+
+					var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+					jssor_1_slider.$ScaleWidth(expectedWidth);
+				}
+				else {
+					window.setTimeout(ScaleSlider, 30);
+				}
+			}
+
+			ScaleSlider();
+
+			$Jssor$.$AddEvent(window, "load", ScaleSlider);
+			$Jssor$.$AddEvent(window, "resize", ScaleSlider);
+			$Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+			/*#endregion responsive code end*/
+		};
+	</script>
+	<link
+		href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,regular,italic,700,700italic&subset=latin-ext,greek-ext,cyrillic-ext,greek,vietnamese,latin,cyrillic"
+		rel="stylesheet" type="text/css" />
+
+	<svg viewbox="0 0 0 0" width="0" height="0" style="display:block;position:relative;left:0px;top:0px;">
+		<defs>
+			<filter id="jssor_1_flt_1" x="-50%" y="-50%" width="200%" height="200%">
+				<feGaussianBlur stddeviation="4"></feGaussianBlur>
+			</filter>
+			<radialGradient id="jssor_1_grd_2">
+				<stop offset="0" stop-color="#fff"></stop>
+				<stop offset="1" stop-color="#000"></stop>
+			</radialGradient>
+			<mask id="jssor_1_msk_3">
+				<path fill="url(#jssor_1_grd_2)" d="M600,0L600,400L0,400L0,0Z" x="0" y="0"
+					style="position:absolute;overflow:visible;"></path>
+			</mask>
+		</defs>
+	</svg>
+	<div id="jssor_1"
+		style="position:relative;margin:0 auto;top:0px;left:0px;width:1600px;height:560px;overflow:hidden;visibility:hidden;">
+		<!-- Loading Screen -->
+	
+		<div data-u="slides"
+			style="cursor:default;position:relative;top:0px;left:0px;width:1600px;height:560px;overflow:hidden;">
+	
+			<div style="background-color:#000000;">
+				<img data-u="image" style="opacity:0.8;" data-src="src/banner/bs1.jpg" />
+				<div data-ts="flat" data-p="1080" style="left:0px;top:0px;width:1600px;height:560px;position:absolute;">
+					<svg viewbox="0 0 600 400" data-ts="preserve-3d" width="600" height="400" data-tchd="jssor_1_msk_3"
+						style="left:255px;top:0px;display:block;position:absolute;overflow:visible;">
+						<g mask="url(#jssor_1_msk_3)">
+							<path data-to="300px -180px" fill="none" stroke="rgba(250,251,252,0.5)" stroke-width="20"
+								d="M410-350L410-10L190-10L190-350Z" x="190" y="-350" data-t="10"
+								style="position:absolute;overflow:visible;"></path>
+						</g>
+					</svg>
+					<svg viewbox="0 0 800 72" data-to="50% 50%" width="800" height="72" data-t="11"
+						style="left:-800px;top:78px;display:block;position:absolute;font-family:'Roboto Condensed',sans-serif;font-size:84px;font-weight:900;overflow:visible;">
+						<text fill="#fafbfc" text-anchor="middle" x="400" y="72">Customer first
+						</text>
+					</svg>
+					<svg viewbox="0 0 800 72" data-to="50% 50%" width="800" height="72" data-t="12"
+						style="left:1600px;top:153px;display:block;position:absolute;font-family:'Roboto Condensed',sans-serif;font-size:60px;font-weight:900;overflow:visible;">
+						<text fill="#fafbfc" text-anchor="middle" x="400" y="72">Building india's largest retail company
+						</text>
+					</svg>
+				</div>
+			</div>
+			<div style="background-color:#000000;">
+				<img data-u="image" style="opacity:0.8;" data-src="src/banner/bs2.jpg" />
+				<div data-ts="flat" data-p="1080" style="left:0px;top:0px;width:1600px;height:560px;position:absolute;">
+					<svg viewbox="0 0 600 400" data-ts="preserve-3d" width="600" height="400" data-tchd="jssor_1_msk_3"
+						style="left:255px;top:0px;display:block;position:absolute;overflow:visible;">
+						<g mask="url(#jssor_1_msk_3)">
+							<path data-to="300px -180px" fill="none" stroke="rgba(250,251,252,0.5)" stroke-width="20"
+								d="M410-350L410-10L190-10L190-350Z" x="190" y="-350" data-t="10"
+								style="position:absolute;overflow:visible;"></path>
+						</g>
+					</svg>
+					<svg viewbox="0 0 800 72" data-to="50% 50%" width="800" height="72" data-t="11"
+						style="left:-800px;top:78px;display:block;position:absolute;font-family:'Roboto Condensed',sans-serif;font-size:74px;font-weight:900;overflow:visible;">
+						<text fill="#fafbfc" text-anchor="middle" x="400" y="72">Celebrating Choice
+						</text>
+					</svg>
+					<svg viewbox="0 0 800 72" data-to="50% 50%" width="800" height="72" data-t="12"
+						style="left:1600px;top:153px;display:block;position:absolute;font-family:'Roboto Condensed',sans-serif;font-size:40px;font-weight:900;overflow:visible;">
+						<text fill="#fafbfc" text-anchor="middle" x="400" y="72">Delighting with experiences</text>
+						</text>
+					</svg>
+					
+				</div>
+			</div>
+			<div style="background-color:#000000;">
+				<img data-u="image" style="opacity:0.8;" data-src="src/banner/bs3.jpg" />
+				<div data-ts="flat" data-p="1080" style="left:0px;top:0px;width:1600px;height:560px;position:absolute;">
+					<svg viewbox="0 0 600 400" data-ts="preserve-3d" width="600" height="400" data-tchd="jssor_1_msk_3"
+						style="left:255px;top:0px;display:block;position:absolute;overflow:visible;">
+						<g mask="url(#jssor_1_msk_3)">
+							<path data-to="300px -180px" fill="none" stroke="rgba(250,251,252,0.5)" stroke-width="20"
+								d="M410-350L410-10L190-10L190-350Z" x="190" y="-350" data-t="10"
+								style="position:absolute;overflow:visible;"></path>
+						</g>
+					</svg>
+					<svg viewbox="0 0 800 72" data-to="50% 50%" width="800" height="72" data-t="11"
+						style="left:-800px;top:78px;display:block;position:absolute;font-family:'Roboto Condensed',sans-serif;font-size:74px;font-weight:900;overflow:visible;">
+						<text fill="#fafbfc" text-anchor="middle" x="400" y="72">Delivering happiness 
+						</text>
+					</svg>
+					<svg viewbox="0 0 800 72" data-to="50% 50%" width="800" height="72" data-t="12"
+						style="left:1600px;top:153px;display:block;position:absolute;font-family:'Roboto Condensed',sans-serif;font-size:40px;font-weight:900;overflow:visible;">
+						<text fill="#fafbfc" text-anchor="middle" x="400" y="72">Building billon relationship
+						</text>
+					</svg>
+				</div>
+			</div>
+	
+		</div><a data-scale="0" href="https://www.jssor.com" style="display:none;position:absolute;">slider html</a>
+		<!-- Bullet Navigator -->
+		<div data-u="navigator" class="jssorb132" style="position:absolute;bottom:24px;right:16px;" data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+	            <div data-u="prototype" class="i" style="width:12px;height:12px;">
+	                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+	                    <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+	                </svg>
+	            </div>
+	        </div>
+		<!-- Arrow Navigator -->
+		<div data-u="arrowleft" class="jssora051" style="width:55px;height:55px;top:0px;left:25px;" data-autocenter="2"
+			data-scale="0.75" data-scale-left="0.75">
+			<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+				<polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+			</svg>
+		</div>
+		<div data-u="arrowright" class="jssora051" style="width:55px;height:55px;top:0px;right:25px;" data-autocenter="2"
+			data-scale="0.75" data-scale-right="0.75">
+			<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+				<polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+			</svg>
+		</div>
+	</div>
+	<script type="text/javascript">jssor_1_slider_init();
+	</script>
+	
+<!------------------------------------------------------------ banner start ------------------------------------------------------------->
+
+
+<!------------------------------------------------------------- your account start ------------------------------------------------------------->
+		<div class="yourAccount">
+			<h1>Your Account</h1>
+			<div class="btnbox">
+				<a href="#">	<button>Login</button>   </a>
+				<a href="#">    <button>Signup</button>   </a>
+			</div>
+
+		</div>
+<!------------------------------------------------------------- your account end ------------------------------------------------------------->
+
+
+
+
+<!------------------------------------------------------------- about us start ------------------------------------------------------------->
+		<div class="aboutUs">
+			<h1>About Us</h1>
+			<p>
+				Since its inception in 2006, Reliance Retail has grown to become India’s largest retailer delivering superior value to
+				its customers, suppliers and shareholders. Our nationwide network of retail outlets delivers a world-class shopping
+				environment and unmatched customer experience powered by our state-of-the-art technology and seamless supply-chain
+				infrastructure. <br>
+				<span><a href="#"> Learn more about us. </a></span>
+			</p>
+		
+		</div>
+<!------------------------------------------------------------- about us end ------------------------------------------------------------->
+
+
+<!------------------------------------------------------------- our brand start ------------------------------------------------------------->
+		<div class="ourBrand">
+			<h1>OUR BRANDS</h1>
+			<div class="sliderContainer">
+				<div class="card">
+					<img class="banner" src="src/slider2/reliance-fresh.png" alt="">
+					<p>India's largest chain of neighbourhood store</p>
+					<img class="arrow" src="src/slider2/arrow.png" alt="">
+				
+				</div>
+				<div class="card">
+					<img class="banner" src="src/slider2/reliance-smart-point.png" alt="">
+					<p>Neighbourhood Convenience Store</p>
+					<img class="arrow" src="src/slider2/arrow.png" alt="">
+				
+				</div>
+				<div class="card">
+					<img class="banner" src="src/slider2/reliance-smart.png" alt="">
+					<p>Supermarket offering everything under one roof at superior value</p>
+					<img class="arrow" src="src/slider2/arrow.png" alt="">
+				
+				</div>
+				<div class="card">
+					<img class="banner" src="src/slider2/jiomart-logo.png" alt="">
+					<p>Online grocery store</p>
+					<img class="arrow" src="src/slider2/arrow.png" alt="">
+				
+				</div>
+				<div class="card">
+					<img class="banner" src="src/slider2/jio-digital-life.jpg" alt="">
+					<p>India’s largest mobility &amp; communication retail chain</p>
+					<img class="arrow" src="src/slider2/arrow.png" alt="">
+				
+				</div>
+				<div class="card">
+					<img class="banner" src="src/slider2/reliance-digital.png" alt="">
+					<p>India’s largest consumer electronics retail chain</p>
+					<img class="arrow" src="src/slider2/arrow.png" alt="">
+				
+				</div>
+				<div class="card">
+					<img class="banner" src="src/slider2/reliance-trends.png" alt="">
+					<p>India’s largest fashion destination</p>
+					<img class="arrow" src="src/slider2/arrow.png" alt="">
+				
+				</div>
+			</div>
+
+			<!-- small image corocel  -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+			<script src="js/slickSlider.js"></script>
+			<!-- small image corocel  -->
+
+			<div class="movingBtn">
+				<div class="moveLeft" id="moveLeft">
+					<i class="fas fa-chevron-left"></i>
+				</div>
+				<div class="moveRight" id="moveRight">
+					<i class="fas fa-chevron-right"></i>
+				</div>
+			</div>
+
+			<script>
+				$(document).ready(function () {
+					$(".moveLeft").click(function(){
+						$(".slick-prev").click();
+						return false
+					});
+
+					$(".moveRight").click(function () {
+						$(".slick-next").click();
+						return false
+					});
+				});
+			</script>
+
+		</div>
+<!------------------------------------------------------------- our brand end ------------------------------------------------------------->
+
+<!------------------------------------------------------------- footer start ------------------------------------------------------------->
+		<script src="js/topFooter.js"></script>
+		<script src="js/bottomFooter.js"></script>
+
+<!------------------------------------------------------------- footer end ------------------------------------------------------------->
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+

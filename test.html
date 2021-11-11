@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .img{
+             width: 400px;
+            height: 50px;
+            visibility: visible;
+            margin: auto;
+            display: flex;
+            border: 1px solid;
+            gap: 20px;
+        }
+        .img .costomRadio{
+            border: 1px solid;
+            width: 50%;
+            display: flex;
+            align-items: center;
+        }
+        .img .costomRadio .cusRadioB{
+              border: 1px solid;
+              border-radius: 50%; 
+              height: 10px ;
+              display: flex;
+              margin-right: 20px;
+              justify-content: center;
+              align-items: center;
+              /* padding: 1px; */
+              width: 10px;
+        }
+        .img .costomRadio .cusRadioB .dot1{
+              /* border: 1px solid; */
+              border-radius: 50%;
+              /* visibility: hidden; */
+             
+              height: 5px ;
+              width: 5px;
+              background-color: gold;
+        }
+        .img .costomRadio .cusRadioB .dot2{
+            border-radius: 50%;
+              /* visibility: hidden; */
+               display: none;
+              height: 5px ;
+              width: 5px;
+              background-color: gold;
+        }
+        .div{
+            width: 80%;
+            /* border: 1px solid; */
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        .div div{
+            border: 1px solid;
+            height: 10px;
+            border-radius: 50%;
+            background-color: pink;
+            width: 10px;
+            margin-right: 10px;
+        }
+        .card{
+            /* border: 1px solid; */
+            display: none;
+            /* display: block; */
+            /* visibility: hidden;
+            opacity: 0; */
+            background: rgba(226, 134, 150, 0.445);
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+        <div class="img">
+            <div class="costomRadio">
+                <span class="cusRadioB cusRadioB1">
+                    <div id="dot" class="dot1"></div>
+                </span>
+                gender1
+
+            </div>
+            <div class="costomRadio">
+                <span class="cusRadioB cusRadioB2">
+                    <div id="dot" class="dot2"></div>
+                </span>
+                gender1
+            
+            </div>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready( function(){
+                $(".cusRadioB1").click( function(){
+                    $(".dot1").toggle();
+                    $(".dot2").toggle();
+                });
+                $(".cusRadioB2").click(function () {
+                    $(".dot1").toggle();
+                    $(".dot2").toggle();
+                });
+            });
+        </script>
+
+    <div class="div">
+        <div class="s1"></div> punam
+    </div>
+
+    <div class="card" id="c1"> pepepp pe peepeee peeepep </div>
+
+    <div class="div">
+        <div class="s2"> </div> weds
+    </div>
+
+    <div class="card" id="c1"> psarthak bakshi the gareeb </div>
+
+    <div class="div">
+        <div class="s3"> </div> bangalan ( lesbo )
+    </div>
+    <div class="card" id="c1"> she already have a boyfrend </div>
+
+    <script>
+        function ckeck(a){
+             a.style.display = "block";
+             
+       
+        }
+        document.querySelector(".s1").addEventListener("click", () => {
+            a = document.querySelector("#c1");
+            ckeck(a)
+        } );
+        document.querySelector(".s2").addEventListener("click", () => {
+                a = document.querySelector("#c2")
+             ckeck(a)
+            });
+        document.querySelector(".s3").addEventListener("click", () => off());
+    </script>
+    
+</body>
+</html>
