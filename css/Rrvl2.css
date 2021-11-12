@@ -1,0 +1,407 @@
+.ourbrandBanner{
+    /* border: 1px solid; */
+    height: 250px;
+    padding: 0%;
+    display: flex;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-image: url(https://relianceretail.com/img/page-banner/consumer-brands-banner.jpg);
+}
+.ourbrandBanner img{
+    margin-bottom: -3px;
+}
+.ourbrandBannerText{
+    /* border: 1px solid; */
+    height: 80px;
+    width: 1150px;
+    margin: auto;
+}
+.ourbrandBannerText h1{
+    /* border: 1px solid; */
+    font-family: sans-serif;
+    font-size: 25px;
+    color: darkblue;
+
+}
+.ourbrandBannerText h2{
+    /* border: 1px solid; */
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    padding-top: 5px;
+}
+@media screen and (max-width:780px) {
+    .ourbrandBanner img{
+        display: none;
+    }
+    .ourbrandBanner{
+        height: 320px;
+    }
+}
+/* -------------------------------------------------------- */
+
+.bgBox{
+    /* border: 1px solid black; */
+    height: 930px;
+    width: 98%;
+    background-image: linear-gradient(#fff,rgb(212, 212, 212));
+    padding:18px;
+}
+
+.bgBox .white{
+    /* border: 1px solid teal; */
+    width :88%;
+    height: 910px;
+    margin:auto;
+    
+    background-color: #fff;
+}
+
+.bgBox .container{
+    /* order:1px solid blue; */
+    /* width :88%; */
+    height: 450px;
+    margin: auto;
+    background-color:#fff ;
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    padding: 13px;
+   
+}
+/********************************** left part */
+.bgBox .container .left{
+    /* border: 1px solid green; */
+    margin: left;
+    width: 45%;
+    height:400px;
+    line-height: 25px;
+    
+}
+
+.container .left p{
+    font-size: 15px ;
+
+}
+ 
+.container .left h4{
+    color:#24a;
+    font-size: 20px ;
+}
+
+/********************************** right part */
+.bgBox .container .right{
+    /* border: 1px solid rgb(212, 25, 25); */
+    margin: right;
+    width: 48%;
+    height:320px;
+    margin-top: 120px;
+    line-height: 25px;
+    
+    
+}
+
+.container .right p{
+    font-size: 15px ;
+
+}
+
+.vl{
+    border-left:1px solid rgb(211, 211, 211) ;
+    height: 320px;
+    margin-top: 120px;
+    
+}
+/********************************************* bottom */
+
+.white .bot{
+    /* border:1px solid black; */
+    height:380px;
+    
+    margin:0;
+    padding:10px;
+
+}
+
+/*--------------------------------------------------* Nav bar */
+
+.bottom{
+    /* border: 1px solid greenyellow; */
+    border-bottom-style:none;
+    /* display:flex; */
+    
+}
+.bottom #one ,#two,#three{
+    background-color:#fff;
+    height:40px;
+    border-radius: 8px;
+    /* padding: 30px; */
+    color:#048;
+    text-align: center;
+    /* justify-content: space-evenly; */
+    margin-left: 60px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    border-color: transparent;
+    
+}
+
+.bottom #one:hover{
+    background-color: #eee;
+    color:#493313;
+    
+    border-bottom-style: none;
+    height:40px;
+}
+.bottom #two:hover{
+    background-color: #eee;
+    color:#493313;
+    
+    border-bottom-style: none;
+    height:40px;
+}
+.bottom #three:hover{
+    background-color: #eee;
+    color:#493313;
+    
+    border-bottom-style: none;
+    height:40px;
+}
+
+#ar{
+    font-family: sans-serif;
+    font-size: 15px;
+    display: visible;
+}
+
+#fs{
+    display: none;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+#od{
+    display: none;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+#ar #cont{
+    width: 20%;
+    height:30px;
+    font-family: sans-serif;
+    border-color: grey;
+    /* margin-top: 30px; */
+}
+
+#fs #cont{
+    width: 20%;
+    height:30px;
+    font-family: sans-serif;
+    border-color: grey;
+    
+}
+#ar .pdfTag{
+    border:1px solid skyblue;
+    height: 32px;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+   
+}
+
+ #ar .pdfTag .icon{
+    /* border: 1px solid green; */
+    margin-top: 5px;
+    width: 1.8%;
+    height: 25px;
+    background-image: url("https://relianceretail.com/img/icon-pdf.png");
+    background-size: cover;
+    
+    
+}
+
+#ar .pdfTag #p{
+    /* border: 1px solid green; */
+    height: 45%;
+    width: 20%;
+    vertical-align: middle;
+    font-size: 16px;
+    margin-left: 10px;
+
+}
+
+#ar .pdfTag #p:hover{
+    cursor: pointer;
+    color: #048;
+}
+/* ------------------------------------------------------- */
+
+#od .tag1,.tag2,.tag3,.tag4,.tag5{
+    border:1px solid skyblue;
+    height: 32px;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+   
+}
+/* ------------------------------ */
+ #od .tag1 .icon{
+    /* border: 1px solid green; */
+    margin-top: 5px;
+    width: 1.8%;
+    height: 25px;
+    background-image: url("https://relianceretail.com/img/icon-pdf.png");
+    background-size: cover;
+      
+ }
+ #od .tag2 .icon{
+    /* border: 1px solid green; */
+    margin-top: 5px;
+    width: 1.8%;
+    height: 25px;
+    background-image: url("https://relianceretail.com/img/icon-pdf.png");
+    background-size: cover;  
+}
+#od .tag3 .icon{
+    /* border: 1px solid green; */
+    margin-top: 5px;
+    width: 1.8%;
+    height: 25px;
+    background-image: url("https://relianceretail.com/img/icon-pdf.png");
+    background-size: cover;
+    
+    
+}
+#od .tag4 .icon{
+    /* border: 1px solid green; */
+    margin-top: 5px;
+    width: 1.8%;
+    height: 25px;
+    background-image: url("https://relianceretail.com/img/icon-pdf.png");
+    background-size: cover;
+    
+    
+}
+#od .tag5 .icon{
+    /* border: 1px solid green; */
+    margin-top: 5px;
+    width: 1.8%;
+    height: 25px;
+    background-image: url("https://relianceretail.com/img/icon-pdf.png");
+    background-size: cover;
+    
+    
+}
+/* ----------------------------------- */
+#od .tag1 #p{
+    /* border: 1px solid green; */
+    height: 45%;
+    vertical-align: middle;
+    font-size: 16px;
+    margin-left: 10px;
+
+}
+#od .tag2 #p{
+    /* border: 1px solid green; */
+    height: 45%;
+    vertical-align: middle;
+    font-size: 16px;
+    margin-left: 10px;
+
+}
+#od .tag3 #p{
+    /* border: 1px solid green; */
+    height: 45%;
+    vertical-align: middle;
+    font-size: 16px;
+    margin-left: 10px;
+
+}
+#od .tag4 #p{
+    /* border: 1px solid green; */
+    height: 45%;
+    vertical-align: middle;
+    font-size: 16px;
+    margin-left: 10px;
+
+}
+#od .tag5 #p{
+    /* border: 1px solid green; */
+    height: 45%;
+    vertical-align: middle;
+    font-size: 16px;
+    margin-left: 10px;
+
+}
+/* --------------------------------------- */
+
+#od .tag1 #p:hover{
+    cursor: pointer;
+    color: #048;
+}
+
+#od .tag2 #p:hover{
+    cursor: pointer;
+    color: #048;
+}
+
+#od .tag3 #p:hover{
+    cursor: pointer;
+    color: #048;
+}
+
+#od .tag4 #p:hover{
+    cursor: pointer;
+    color: #048;
+}
+
+#od .tag5 #p:hover{
+    cursor: pointer;
+    color: #048;
+}
+/* --------------------------------------- */
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------- */
+
+@media screen and(min-width:500px) and (max-width:900px){
+    .bgBox .container{
+        width: 680px;
+        /* display:block; */
+        box-sizing: border-box;
+    }
+
+    .bgBox .white{
+        width: 80%;
+        
+    }
+
+    .hr{
+        display: grid;
+    }
+
+    .bgBox .container{
+        width:80%;
+        flex-direction: column;
+    }
+     
+    .white .bottom{
+        width:80%;
+    }
+    .bgBox .container .left{
+        /* margin-bottom: 500px; */
+        width:60%;
+    }
+
+}
