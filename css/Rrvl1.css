@@ -1,0 +1,209 @@
+.ourbrandBanner{
+    /* border: 1px solid; */
+    height: 250px;
+    padding: 0%;
+    display: flex;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    background-image: url(https://relianceretail.com/img/page-banner/consumer-brands-banner.jpg);
+}
+.ourbrandBanner img{
+    margin-bottom: -3px;
+}
+.ourbrandBannerText{
+    /* border: 1px solid; */
+    height: 80px;
+    width: 1150px;
+    margin: auto;
+}
+.ourbrandBannerText h1{
+    /* border: 1px solid; */
+    font-family: sans-serif;
+    font-size: 25px;
+    color: darkblue;
+
+}
+.ourbrandBannerText h2{
+    /* border: 1px solid; */
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    padding-top: 5px;
+}
+@media screen and (max-width:780px) {
+    .ourbrandBanner img{
+        display: none;
+    }
+    .ourbrandBanner{
+        height: 320px;
+    }
+}
+/* -------------------------------------------------------- */
+
+
+.bgBox{
+    /* border: 1px solid black; */
+    height: 800px;
+    width: 98%;
+    background-image: linear-gradient(#fff,rgb(212, 212, 212));
+    padding:18px;
+}
+
+.bgBox .white{
+    /* border: 1px solid teal; */
+    width :88%;
+    height: 790px;
+    margin:auto;
+    
+    background-color: #fff;
+}
+
+.bgBox .container{
+    /* order:1px solid blue; */
+    /* width :88%; */
+    height: 450px;
+    margin: auto;
+    background-color:#fff ;
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif;
+    padding: 13px;
+   
+}
+/********************************** left part */
+.bgBox .container .left{
+    /* border: 1px solid green; */
+    margin: left;
+    width: 45%;
+    height:400px;
+    line-height: 25px;
+    
+}
+
+.container .left p{
+    font-size: 15px ;
+
+}
+ 
+.container .left h4{
+    color:#24a;
+    font-size: 20px ;
+}
+
+/********************************** right part */
+.bgBox .container .right{
+    /* border: 1px solid rgb(212, 25, 25); */
+    margin: right;
+    width: 48%;
+    height:320px;
+    margin-top: 120px;
+    line-height: 25px;
+    
+    
+}
+
+.container .right p{
+    font-size: 15px ;
+
+}
+
+.vl{
+    border-left:1px solid rgb(211, 211, 211) ;
+    height: 320px;
+    margin-top: 120px;
+    
+}
+/********************************************* bottom */
+  .hr{
+     /* border: 1px solid springgreen; */
+     height:20px;
+     width: 98%;
+     margin:auto;
+    color:rgba(211, 211, 211, 0.37);
+
+}
+
+  .white .bottom{
+    /* border: 1px solid yellow; */
+    height:280px;
+    text-align: center;
+    font-family: sans-serif;
+       
+}
+
+.bottom  p {
+    color:#24a;
+    line-height: 0px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.bottom #textBox{
+    margin-top: 20px;
+    height:40px;
+    width: 40%;
+    border-color: lightgray;
+    border-radius: 20px;
+    font-size: 15pt;
+}
+
+.bottom #btn {
+    margin-top: 20px;
+    color:#fff;
+    background-color:#24a;
+    width:18%;
+    padding:15px;
+    border-color: transparent;
+}
+
+.bottom #btn:hover{
+    background-color: #b22;
+}
+
+#one{
+    /* display: none; */
+}
+#two{
+    display: none;
+}
+
+#three{
+    display: none;
+}
+
+#list-nav #ar #one{
+    border: 1px solid orange;
+    height:30px;
+    display: none;
+}
+
+/* -------------------------------------------------- */
+
+@media screen and(min-width:500px) and (max-width:900px){
+  .bgBox .white{
+      display: none;
+  }
+
+  .bgBox .container{
+      display:flex;
+  }
+
+  .vl,.hr{
+      display: none;
+      margin-bottom:100px;
+  }
+
+  .bgBox .container .left{
+      width: 100px;
+      flex-direction: column;
+      box-sizing: border-box;
+      overflow: hidden;
+  }
+
+  .bottom #btn {
+    margin-top:180px;
+  }
+
+}
