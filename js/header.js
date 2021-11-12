@@ -4,7 +4,7 @@ document.write(`
  		<div class="row v-center">
  			<div class="header-item item-left">
  				<div class="logo">
- 					<a href="../index.html"> <img src="src/logo/logo.png" alt=""></a>
+ 					<a href="index.html"> <img src="src/logo/logo.png" alt=""></a>
  				</div>
  			</div>
  			<!-- menu start here -->
