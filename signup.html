@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/singin.css" />
+  </head>
+  <body>
+    <div class="header_signin">
+      <div class="inner-html">
+        <div id="left">
+          <a id="a1" href="index.html"><img src="./src/logo/logo.png" /></a>
+        </div>
+        <div id="right"><a id="a2" href="index.html">Home</a></div>
+      </div>
+    </div>
+    <div id="outer_box" style="width: 100%; height: 398px">
+      <div id="main-container">
+        <!-- <form> -->
+        <h3 style="color: rgb(61, 56, 56)">
+          Mobile Number Linked Loyalty Account
+        </h3>
+        <hr />
+        <input type="number" placeholder="PHONE NUMBER" id="phone" required />
+        <br />
+        <input
+          list="browsers"
+          name="browser"
+          id="browser"
+          placeholder="CITY"
+          required
+        />
+        <datalist id="browsers">
+          <option value="ABADPUR"></option>
+          <option value="ABDU RAHIMAN N"></option>
+          <option value="ABHANPUR"></option>
+          <option value="ABHAYAPURI"></option>
+          <option value="BERHAIT BAZAR"></option>
+          <option value="BALLARPUR"></option>
+          <option value="CHALLAKERE"></option>
+          <option value="CHALLAPALLE"></option>
+          <option value="DALSINGHSARAI"></option>
+          <option value="FARIDABAD"></option>
+          <option value="BALLABGARH"></option>
+          <option value="GURUGRAM"></option>
+          <option value="PANIPAT"></option>
+          <option value="ABMALA"></option>
+          <option value="ROHTAK"></option>
+        </datalist>
+        <br />
+        <button onclick="submitData()">SUBMIT</button>
+        <!-- </form> -->
+      </div>
+    </div>
+    <div class="pravicy-policy">
+      <div class="inner-html1">
+        <div id="left1">© Reliance Retail. All rights reserved.</div>
+        <div id="right1">Privacy Policy</div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./js/signup.js"></script>
