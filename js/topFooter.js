@@ -5,19 +5,19 @@ document.write(`
 					<div class="box">
 						<h1>About Us</h1>
 						<ul>
-							<li> <a href="#">Our Business</a> </li>
-							<li> <a href="#">Key Facts</a> </li>
-							<li> <a href="#">Milestones</a> </li>
-							<li> <a href="#">Awards & Recognition</a> </li>
+							<li> <a href="aboutus_ourBusiness.html">Our Business</a> </li>
+							<li> <a href="aboutus_ourBusiness.html">Key Facts</a> </li>
+							<li> <a href="aboutus_award.html">Milestones</a> </li>
+							<li> <a href="aboutus_award.html">Awards & Recognition</a> </li>
 						</ul>	
 					</div>
 					<div class="box">
 						<h1>Our Brands</h1>
 						<ul>
-							<li> <a href="#">Reliance Fresh</a> </li>
-							<li> <a href="#">Reliance Smart</a> </li>
-							<li> <a href="#">Reliance Smart Point</a> </li>
-							<li> <a href="#">JioMart</a> </li>
+							<li> <a href="relFresh.html">Reliance Fresh</a> </li>
+							<li> <a href="relFresh.html">Reliance Smart</a> </li>
+							<li> <a href="relSmart.html">Reliance Smart Point</a> </li>
+							<li> <a href="jeoMart.html">JioMart</a> </li>
 							<li> <a href="#">Reliance Digital</a> </li>
 							<li> <a href="#">Jio Store</a> </li>
 							<li> <a href="#">Reliance Trends</a> </li>
@@ -45,8 +45,8 @@ document.write(`
 						<h1>Our Brands</h1>
 						<p class="p"><a href="#">Apply Now </a></p>
 						<h1>Investor Relations</h1>
-						<p><a href="#">RRVL Investor Relations </a></p>
-						<p class="p"><a href="#">RRVL Investor Relations </a></p>
+						<p><a href="Rrvl1.html">RRVL Investor Relations </a></p>
+						<p class="p"><a href="Rrvl2.html">RRVL Investor Relations </a></p>
 						<h1>Store Locator</h1>
 					</div>
 					<div class="box">

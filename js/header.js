@@ -123,8 +123,8 @@ document.write(`
 								<div class="list-item" id="list-style-custom">
 							
 									<ul>
-										<li id="li"><a href="Rrv1.html"><i class="fas fa-chevron-right" id="fa-arrow"></i> RRVL Investor Relations</a></li>
-										<li id="li"><a href="Rrv2.html"><i class="fas fa-chevron-right" id="fa-arrow"></i> RRL Investor Relations</a></li>
+										<li id="li"><a href="Rrvl1.html"><i class="fas fa-chevron-right" id="fa-arrow"></i> RRVL Investor Relations</a></li>
+										<li id="li"><a href="Rrvl2.html"><i class="fas fa-chevron-right" id="fa-arrow"></i> RRL Investor Relations</a></li>
 										
 									</ul>
 								</div>
